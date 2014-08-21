@@ -3,7 +3,7 @@ package net.flower.ixmsxms;
 public class IxmsxmsConfig {
 
 	//public static final String APIHUB_HOST = "http://54.92.57.22/";
-    public static final String APIHUB_HOST = "http://192.168.16.201/";
+     public static final String APIHUB_HOST = "http://192.168.16.201/";
 
 
 	public static final String DEFAULT_API_ROOT_URL = APIHUB_HOST;

@@ -18,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 @IxmsxmsRestClient
-@Rest(rootUrl = "http://vio.cod.dev.daum.net",converters = {FormHttpMessageConverter.class,
+@Rest(rootUrl = IxmsxmsConfig.DEFAULT_API_ROOT_URL,converters = {FormHttpMessageConverter.class,
         GsonHttpMessageConverter.class})
 public interface ChildRestClient extends RestClientErrorHandling, RestClientRootUrl, RestClientSupport {
     @Post("/child/add")

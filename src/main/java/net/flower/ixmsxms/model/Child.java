@@ -18,8 +18,8 @@ public class Child implements Serializable{
     public String status;
     public Float stature;
     public Float weight;
-    public Date regDatetime;
-    public Date modDatetime;
+    public String regDatetime;
+    public String modDatetime;
     public String birthDate;
     public long age;
     public long days;

@@ -7,6 +7,7 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 import net.flower.R;
+import net.flower.ixmsxms.async.EnhancedAsyncTask;
 import net.flower.ixmsxms.async.SimpleAsyncTask;
 import net.flower.ixmsxms.model.Child;
 import net.flower.ixmsxms.model.Now;
@@ -75,7 +76,7 @@ public class StartActivity extends Activity {
         protected addChildAsyncTask(Context context, Child childForAdd) {
             super(context);
             this.childForAdd = childForAdd;
-            
+
             //Toast.makeText(context, "1", Toast.LENGTH_SHORT).show();
         }
 
@@ -108,10 +109,17 @@ public class StartActivity extends Activity {
 
         @Override
         protected void onTaskSucceeded(Child result) {
-            Log.d("test",""+result.userId);
-            Toast.makeText(context, ""+result.birthDate, Toast.LENGTH_LONG).show();
+            Log.d("test",""+result.name);
+            Toast.makeText(context, ""+result.name, Toast.LENGTH_LONG).show();
         }
 
+        @Override
+        public SimpleAsyncTask<Child> setErrorHandler(ErrorHandler errorHandler) {
+
+
+
+            return super.setErrorHandler(errorHandler);
+        }
     }
 
     private class getTestAsyncTask extends SimpleAsyncTask<Now> {
@@ -132,6 +140,10 @@ public class StartActivity extends Activity {
             Toast.makeText(context, ""+result.nowId, Toast.LENGTH_LONG).show();
         }
 
+        @Override
+        public SimpleAsyncTask<Now> setErrorHandler(ErrorHandler errorHandler) {
+            return super.setErrorHandler(errorHandler);
+        }
     }
 
 }
