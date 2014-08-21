@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   	android:layoutAnimation="@anim/layout_anim"
+    android:background="@drawable/bg_splash"
+>
+
+    <ImageView
+        android:id="@+id/appMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:drawingCacheQuality="high"
+        android:paddingTop="200px"
+    />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="150px"
+        android:text="아이튼튼 화이팅!!"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>

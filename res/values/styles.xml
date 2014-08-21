@@ -1,0 +1,106 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 전체 배경 테마 (민트) -->
+    <style name="WindowBackgroundMint">
+        <item name="android:background">#6cb4bb</item>
+    </style>
+
+    <!-- 전체 배경 테마 (연그레이) -->
+    <style name="WindowBackgroundGray">
+        <item name="android:background">#e7ebe8</item>
+    </style>
+
+    <!-- 타이틀 배경 테마 (민트) -->
+    <style name="WindowTitleBackground">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/title_bg</item>
+    </style>
+
+    <!-- 모든 엑티비티에 적용될 메인 테마 -->
+    <style name="MainTheme" parent="android:Theme.Light">
+        <!--<item name="android:background">@style/WindowBackgroundGray</item>-->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:windowTitleSize">50dip</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+    </style>
+
+    <!-- 스플래시, 로그인 테마 (타이틀바, 상태바 없음) -->
+    <style name="FullTheme" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+
+    </style>
+
+    <!-- 로그인 테마 -->
+    <style name="LoginTheme" parent="@style/FullTheme">
+
+    </style>
+
+    <!-- 확인|취소 버튼 영역 -->
+    <style name="BottomButtonWrap" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- 확인|취소 > 확인 버튼 -->
+    <style name="BottomButtonConfirm" parent="BottomButtonWrap">
+        <item name="android:background">#4d4d4d</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- 확인|취소 > 취소 버튼 -->
+    <style name="BottomButtonCancel" parent="BottomButtonWrap">
+        <item name="android:background">#ebebeb</item>
+        <item name="android:textColor">#747474</item>
+    </style>
+
+    <!-- 노란 버튼 -->
+    <style name="ButtonYellow" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_yellow</item>
+        <item name="android:textColor">#674004</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <!-- 입력창 -->
+    <style name="EditTextLogin" parent="@android:style/Widget.EditText">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#c1c1c1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="point_color">#7ab9c6</color>
+    <color name="mint_color">#6cb4bb</color>
+    <color name="hint_color">#c1c1c1</color>
+</resources>
