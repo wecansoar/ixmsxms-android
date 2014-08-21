@@ -75,6 +75,7 @@ public class StartActivity extends Activity {
         protected addChildAsyncTask(Context context, Child childForAdd) {
             super(context);
             this.childForAdd = childForAdd;
+            
             //Toast.makeText(context, "1", Toast.LENGTH_SHORT).show();
         }
 
