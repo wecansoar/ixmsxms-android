@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
+import com.google.gson.JsonObject;
+import com.koushikdutta.async.future.FutureCallback;
 import net.flower.R;
+import net.flower.ixmsxms.IxmsxmsConfig;
 import net.flower.ixmsxms.async.EnhancedAsyncTask;
 import net.flower.ixmsxms.async.SimpleAsyncTask;
 import net.flower.ixmsxms.model.Child;
@@ -50,15 +53,16 @@ public class StartActivity extends Activity {
         Child childForAdd = new Child();
         childForAdd.birthDate="20140202";
         childForAdd.imageUrl="";
-        childForAdd.name ="정지율";
+        childForAdd.name ="모모";
         childForAdd.sex = "F";
-        childForAdd.userId = 1;
+        childForAdd.userId = 2;
 //        /Log.d("childForAdd :",""+childForAdd);
 
         Toast.makeText(this, "클릭", Toast.LENGTH_SHORT).show();
        new addChildAsyncTask(this, childForAdd).execute();
 
     }
+
 
     @Click
     void getChildBtnClicked(){
