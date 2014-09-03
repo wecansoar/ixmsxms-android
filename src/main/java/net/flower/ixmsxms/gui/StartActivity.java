@@ -2,15 +2,10 @@ package net.flower.ixmsxms.gui;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
-import com.google.gson.JsonObject;
-import com.koushikdutta.async.future.FutureCallback;
 import net.flower.R;
-import net.flower.ixmsxms.IxmsxmsConfig;
-import net.flower.ixmsxms.async.EnhancedAsyncTask;
 import net.flower.ixmsxms.async.SimpleAsyncTask;
 import net.flower.ixmsxms.model.Child;
 import net.flower.ixmsxms.model.Now;
